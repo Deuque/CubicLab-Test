@@ -33,11 +33,12 @@ class FirstScreen extends StatelessWidget {
         quantity: '100 mg',
         time: '7:00 AM'),
   ];
-  double dpadd = 14;
+  double dpadd = 18.5;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: white,
       body: Column(
         children: <Widget>[
           Container(
@@ -48,10 +49,13 @@ class FirstScreen extends StatelessWidget {
               children: <Widget>[
                 Row(
                   children: <Widget>[
-                    Icon(
-                      Icons.arrow_back_ios,
-                      size: 18.5,
-                      color: white.withOpacity(0.85),
+                    InkWell(
+                      onTap: ()=>Navigator.pop(context),
+                      child: Icon(
+                        Icons.arrow_back_ios,
+                        size: 18.5,
+                        color: white.withOpacity(0.85),
+                      ),
                     ),
                     Expanded(
                         child: Align(
@@ -89,7 +93,7 @@ class FirstScreen extends StatelessWidget {
           ),
           Expanded(
             child: ListView(
-              padding: EdgeInsets.symmetric(vertical: 20),
+              padding: EdgeInsets.symmetric(vertical: 30),
               children: <Widget>[
                 MedLabel(icon: 'assets/sun.png', label: 'Before Breakfast'),
                 MedLayout(medItem: Medications[0]),
@@ -159,7 +163,7 @@ class FirstScreen extends StatelessWidget {
 
   Widget MedLabel({@required icon, @required label}) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: dpadd, vertical: 2),
+      padding: EdgeInsets.symmetric(horizontal: dpadd, vertical: 5),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
