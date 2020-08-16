@@ -2,15 +2,13 @@
 
 A technical test
 
-## Getting Started
+<br/>
+<br/>
+A simple welcome screen for selection
+<img src="images/t1.png" height="420"/>
 
-This project is a starting point for a Flutter application.
+Screen one: Adobe xd design
+<img src="images/t2.png" height="420"/>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Screen two: Wireframe Sketch
+<img src="images/t3.png" height="420"/>
